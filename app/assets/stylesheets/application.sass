@@ -1,0 +1,62 @@
+@import "whitespace-reset"
+
+body
+  font-family: "Myriad Pro"
+  font-size: 15px
+  color: #222
+
+body > header
+  background: #111
+  height: 60px
+  padding: 0 7.5%
+  #logo
+    padding: 17px 0 0 0
+
+  nav
+    float: right
+    a, a:active, a:visited, a:hover
+      text-decoration: none
+      color: #ccc
+      display: inline-block
+      padding: 23px 20px 8px
+      margin: 0 0 0 12px
+      font-size: 18px
+      &.active, &:hover
+        border-bottom: 6px solid #E82239
+
+section#banner
+  background-image: url('main_image.png')
+  background-repeat: no-repeat
+  background-position: top center
+  background-color: #232323
+  height: 500px
+  text-align: center
+  overflow: auto
+  h1
+    display: inline-block
+    font-size: 35px
+    color: white
+    background: black
+    opacity: .70
+    padding: 17px 0px 15px
+    border-radius: 7px
+    margin: 50px 0 0 0
+    font-weight: normal
+    width: 850px
+  #circle_container
+    width: 850px
+    margin: 40px auto 0
+    article
+      display: inline-block
+      background: url('blue_circle.png') no-repeat top center
+      width: 33%
+      height: 250px
+      &#designs
+        background-position: top left
+      &#editable
+        background-position: top right
+      h2
+        color: #ddd
+        font-size: 20px
+        margin: 100px 0 0 0
+        font-weight: normal
