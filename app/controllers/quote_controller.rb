@@ -3,6 +3,7 @@ class QuoteController < ApplicationController
 
   def create
     quote.save
+    MailTime::Action.record('9TNyVbs', cookies[:mailtime_delivery_token])
     redirect_to :quote, notice: "Your request for a quote has been sent. We will be in touch soon."
   end
 

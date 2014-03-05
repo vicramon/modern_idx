@@ -12,6 +12,7 @@ gem 'pg'
 gem 'pry-rails'
 gem 'puma'
 gem 'rails_12factor'
+gem 'rest-client'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 
