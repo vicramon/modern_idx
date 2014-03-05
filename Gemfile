@@ -3,6 +3,7 @@ ruby "2.1.0"
 
 gem 'rails', '4.0.2'
 
+gem 'airbrake'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'decent_exposure'
 gem 'haml-rails'
