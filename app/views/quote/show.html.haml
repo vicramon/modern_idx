@@ -1,27 +1,39 @@
+%section.banner.quote_banner
+  %h1 Request a Quote
+
 %section#quote.marketing
   %article
-    %h1 Request a Quote
 
-    = form_tag quote_path do
+    - if flash[:notice]
+      .notice= flash[:notice]
 
-      %dl
-        %dt= label_tag :name
-        %dd= text_field_tag :name
+    %h1 You're one step away from an incredible website.
 
-      %dl
-        %dt= label_tag :email
-        %dd= text_field_tag :email
+    = form_for quote, url: quote_path do |f|
 
       %dl
-        %dt= label_tag :organization
-        %dd= text_field_tag :organization
+        %dt= f.label :name
+        %dd= f.text_field :name
+
+      %dl
+        %dt= f.label :email
+        %dd= f.text_field :email
+
+      %dl
+        %dt= f.label :organization
+        %dd= f.text_field :organization
 
       %dl
         %dt
-          = label_tag :description
+          = f.label :description
           .small What do you want to build?
-        %dd= text_area_tag :description
+        %dd= f.text_area :description
 
       %dl
         %dt
-        %dd= submit_tag "Send Request"
+        %dd= f.submit "Send Request"
+
+:javascript
+  $(document).ready( function() {
+    $('#quote_name').focus();
+  });

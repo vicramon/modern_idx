@@ -8,11 +8,13 @@
   %body
     %header
       %nav
-        = link_to "Home", root_path, class: 'active'
+        = active_link_to "Home", root_path, class: 'active', exact: true
         -# = link_to "Solutions", '#'
         -# = link_to "Our Work", '#'
-        = link_to "Request a Quote", quote_path
-      #logo= image_tag 'logo.png'
+        = active_link_to "Request a Quote", quote_path
+      #logo
+        = link_to root_path do
+          = image_tag 'logo.png'
     = yield
     %footer
       = image_tag 'footer_logo.png'
