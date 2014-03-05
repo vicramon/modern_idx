@@ -70,6 +70,43 @@ section#banner
 section.gray
   background: #F8F8F8
 
+section#quote
+  article
+    text-align: left
+    h1
+      padding-bottom: 30px
+  form
+    line-height: 1.7
+    font-size: 16px
+    dl
+      padding: 0 0 10px 0
+      dt
+        display: inline-block
+        width: 120px
+        text-align: right
+        padding: 0 3px 0 0
+        vertical-align: top
+        .small
+          color: #888
+          font-size: 14px
+          padding: 5px 0 0 0
+      dd
+        display: inline-block
+    label
+      &:after
+        content: ":"
+
+input[type=text], textarea
+  font-family: Lato
+  font-size: 16px
+  width: 320px
+  padding: 3px
+  border: 1px solid #ccc
+
+textarea
+  height: 90px
+  width: 430px
+
 section.marketing
   padding: 40px 0
   article

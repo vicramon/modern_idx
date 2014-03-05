@@ -9,9 +9,9 @@
     %header
       %nav
         = link_to "Home", root_path, class: 'active'
-        = link_to "Solutions", '#'
-        = link_to "Our Work", '#'
-        = link_to "Request a Quote", '#'
+        -# = link_to "Solutions", '#'
+        -# = link_to "Our Work", '#'
+        = link_to "Request a Quote", quote_path
       #logo= image_tag 'logo.png'
     = yield
     %footer

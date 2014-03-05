@@ -1,0 +1,27 @@
+%section#quote.marketing
+  %article
+    %h1 Request a Quote
+
+    = form_tag quote_path do
+
+      %dl
+        %dt= label_tag :name
+        %dd= text_field_tag :name
+
+      %dl
+        %dt= label_tag :email
+        %dd= text_field_tag :email
+
+      %dl
+        %dt= label_tag :organization
+        %dd= text_field_tag :organization
+
+      %dl
+        %dt
+          = label_tag :description
+          .small What do you want to build?
+        %dd= text_area_tag :description
+
+      %dl
+        %dt
+        %dd= submit_tag "Send Request"
